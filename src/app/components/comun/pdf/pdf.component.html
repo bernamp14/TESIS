@@ -1,0 +1,9 @@
+<div>
+    <input (change)="onFileSelected()" type="file" id="file">
+    <button (click)="PreviousPage()">Previous</button>
+    <input [(ngModel)]="page" type="number" id="page" min=1 [max]="totalpage">
+    <label> de {{totalpage}}</label>
+    <button (click)="NextPage()">Next</button>
+</div>
+<pdf-viewer [src]="pdfSrc" [render-text]="true" [page]="page" [show-all]="false" style="display: block;" (after-load-complete)="callBackFn($event)">
+</pdf-viewer>

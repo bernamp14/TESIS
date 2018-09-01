@@ -1,0 +1,35 @@
+#chat {
+    margin-top: 145px;
+    position: fixed;
+    border: 1px solid black;
+    bottom: 0;
+    right: 0;
+    background: none;
+    width: 346px;
+    height: 140px;
+    top: 315px;
+}
+
+#form_mesajes {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 346px;
+    top: 600px;
+}
+
+#idconexion {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 246px;
+    top: 429px;
+    height: 30px;
+}
+
+#lblconexion {
+    position: fixed;
+    right: 0;
+    width: 246px;
+    top: 300px;
+}

@@ -1,0 +1,21 @@
+<head>
+    <meta charset="UTF-8">
+    <h1>Pizarra</h1>
+    <style type='text/css'></style>
+
+    <!-- <link rel="stylesheet" href="stylesheets/style.css">-->
+</head>
+
+
+<body id="body">
+    <form>
+        <div id="cursors">
+            <!-- Aqui pondremos los cursores de nuestros amigos -->
+        </div>
+
+        <Canvas id='canvas' width='1000' height='500' (mousemove)="movercanvas($event)" (mousedown)="moverabajo($event)" (mouseup)="moverarriba($event)" (mousemoveHandler)="mousemoveHandler($event)">
+            | Tu Navegador no acepta canvas.
+        </Canvas>
+        <button id="limpiar" (click)="clean();resetear()">Limpiar</button>
+    </form>
+</body>

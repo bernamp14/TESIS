@@ -8,9 +8,8 @@ import { AsignaturaResumenComponent } from './../asignatura-resumen/asignatura-r
 })
 export class AsignaturaListadoComponent implements OnInit {
 
-  constructor() { }
-  
-  listado_asignaturas:any[] = [
+  constructor() {}
+   listado_asignaturas: any[] = [
     { "id": "1",
       "nombre": "Calculo diferencial",
       "resumen": {
@@ -51,30 +50,20 @@ export class AsignaturaListadoComponent implements OnInit {
       }
     }
   ]
-  asignaturas:any[] = this.listado_asignaturas;
+  asignaturas: any[] = this.listado_asignaturas;
 
   ngOnInit() {
   }
 
-  buscar(termino:string){
-    
-    let resultadoaArr:any[] = []
+  buscar(termino: string) {
+    let resultadoaArr: any[] = []
     termino = termino.toLowerCase();
-    
-    for(let asignatura of this.listado_asignaturas){
-      
-      let search:string = asignatura.nombre.toLowerCase();
-      
-      if( search.indexOf( termino ) >= 0 ){
-        
+    for (let asignatura of this.listado_asignaturas) {
+      let search: string = asignatura.nombre.toLowerCase();
+      if (search.indexOf( termino ) >= 0 ) {
         resultadoaArr.push( asignatura );
-
       }
-      
     }
-    
     this.asignaturas = resultadoaArr;
-  
   }
-
 }

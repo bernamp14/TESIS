@@ -10,7 +10,9 @@ import { AsignaturaDetalleComponent } from './components/asignatura/asignatura-d
 import { MomentoIndividualComponent } from './components/momentos-educacion/momento-individual/momento-individual.component';
 import { MomentoGrupalComponent } from './components/momentos-educacion/momento-grupal/momento-grupal.component';
 import { MomentoTutorialComponent } from './components/momentos-educacion/momento-tutorial/momento-tutorial.component';
-
+import { PdfComponent } from './components/comun/pdf/pdf.component';
+import { VideochatComponent } from './components/comun/videochat/videochat.component';
+import { TableroComponent } from './components/comun/tablero/tablero.component';
 
 const routes: Routes = [
   //No logueado
@@ -30,7 +32,9 @@ const routes: Routes = [
       { path: 'momentoindividual', component: MomentoIndividualComponent },
       { path: 'momentogrupal', component: MomentoGrupalComponent },
       { path: 'momentotutorial', component: MomentoTutorialComponent },
-      
+      { path: 'pdf', component: PdfComponent },
+      { path: 'videochat', component: VideochatComponent },
+      { path: 'Tablero', component: TableroComponent }
     ]
   }
 ];
